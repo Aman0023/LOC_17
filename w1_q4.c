@@ -7,8 +7,7 @@ int main()
     printf("Enter the second number");
     scanf("%d", &b);
     printf("Enter 1 for operation:\n");
-    
-    scanf("%d", &c);
+   scanf("%d", &c);
     switch(c)
     {
         case 1:
