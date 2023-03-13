@@ -6,13 +6,9 @@ int main()
     scanf("%d", &a);
     printf("Enter the second number");
     scanf("%d", &b);
-    printf("Enter  operation:\n");
-    printf("1.Add\n");
-    printf("2.Subtract\n");
-    printf("3.Multiply\n");
-    printf("4.Division\n");
-    printf("5.Remainder\n");
-    scanf("d", &c);
+    printf("Enter 1 for operation:\n");
+    
+    scanf("%d", &c);
     switch(c)
     {
         case 1:
@@ -41,4 +37,3 @@ int main()
     }
     return 0;
     }
-}
