@@ -8,7 +8,7 @@ int main()
         {
             printf("FIZZ\n");
         }
-        elseif(d%5==0)
+        else if(d%5==0)
         {
             printf("BUZZ\n");
         }
