@@ -1,17 +1,27 @@
 #include<stdio.h>
-int main()
+void main()
 {
-    int a;
-    printf("Enter a number");
-    scanf("%d", &a);
-    if(a<=0)
+    
+    int i,j,m,n,l,k;
+    printf("Enter the no of elements in array 1 and array 2");
+    scanf("%d %d", &m,&n);
+    int arr[m],brr[n];
+    printf("\nEnter the elements in array 1");
+    for(i=0;i<m;i++)
+    scanf("%d", &arr[i]);
+    printf("\nEnter the elements in array 2");
+    for(i=0;i<n;i++)
+    scanf("%d", &brr[i]);
+    l=m+n;
+    int crr[l];
+    for(k=0;k<m;k++)
     {
-        if(a==0)
-        printf("the number is 0");
-        else
-        printf("the number is negative number");
+    crr[k]=arr[k];
     }
-    else
-    printf("the number is a positive number");
-    return 0;
+    for(i=0,j=m;i<n,j<l;i++,j++)
+        crr[j]=brr[i];
+    
+    printf("\nThe merged array is:");
+    for(i=0;i<l;i++)
+    printf("\n%d", crr[i]);
 }
