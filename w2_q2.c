@@ -22,6 +22,6 @@ void main()
         crr[j]=brr[i];
     
     printf("\nThe merged array is:");
-    for(i=0;i<l;i++)
+    for(i=l;i<0;i--)
     printf("\n%d", crr[i]);
 }
